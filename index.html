@@ -7,27 +7,29 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
     <title>Event Calendar</title>
 </head>
 <body>
     <header class="header">
             <nav class="navigation">
     
-                <button class="add__button add__event">
-                    <div class=" div__class add__event">
-                                
-                                <span class="add__button-text add__event">Create</span>
-                    </div>
+                <button class="add__button">
+                               
+                <span class="add__button-text">
+                <img src="./src/icons/icons8-plus-math-50.png" class="plus">
+                 Create</span>
+                    
                 </button>
 
                 <button class="today__button">
                         Today
                     </button>
-                <div class="nav-button">
+                <div class="nav__button">
                     <button class="nav__button-prev">
                           <i class="icon-arrow-left "> < </i>
                         </button>
-                    <button class="nav-button__next button-style">
+                    <button class="nav__button-next">
                         <i class="icon-arrow-right "> > </i>
                         </button>
                 </div>
@@ -52,7 +54,7 @@
 
      <!-- Table section -->
 
-     <section class="table">
+     <!-- <section class="table">
         <div class="times"></div>
         <div class="lines"></div>
 
@@ -63,21 +65,21 @@
         </div>
     </section>
 
-    <section class="promptwindows">
-        <form class="up">
+    <section class="prompt">
+        <form class="prompt__form">
             <button class="close">
                 close  
             </button>
-            <input class="#" type="text" placeholder="Add Title">
+            <input class="input__eventName" type="text" placeholder="Add Title">
 
             <div class="block">
 
-                <input class="#" type="date" id="start" name="trip__start" value="2019-12-15" max="2019-12-31 ">
-                <select class="#" name="select "> 
+                <input class="date__block" type="date" id="start" name="trip__start" value="2019-12-15" max="2019-12-31 ">
+                <select class="start__time" name="select "> 
                 
                 </select>
                 <span>-</span>
-                <select class="#" name="select ">       
+                <select class="end__time" name="select ">       
                 
                 </select>
                 <input class="#" type="date" id="start " name="trip-start " value="2019-12-14" max="2022-12-31 ">
@@ -98,7 +100,7 @@
         </form>
         <span class="#"></span>
         <span class="#"></span>
-    </section>
+    </section> -->
 
 </body>
 

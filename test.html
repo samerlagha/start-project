@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+
+    <header class="head">
+        <nav class="navigation">
+            <button class="navigation__create">
+                <img src="./src/icons/icons8-plus-math-50.png" class="plus">
+                Create
+            </button>
+            <button class="navigation_today">Today</button>
+            <div class="navigation__arows">
+                <div class="navigation__arows-left"   >
+                    <img src="./src/icons/icons8-forward-50.png">
+                </div>
+                <div class="navigation__arows-right"> 
+                    
+                    <img src="./src/icons/icons8-forward-50.png">
+                </div>
+            </div>
+            <div class="navigation__MonthYear"></div>
+        </nav>
+        <div class="week"></div>
+    </header>
+    <main class="main">
+        <div class="timing">
+            <div class="sidebar"></div>
+            <div class="days">
+            </div>
+        </div>
+    </main>
+    <div class="popup__layer">
+        <form class="popup event" data-id-event="">
+            <span class="popup__btn-close"><img class="close"
+                    src="./src/icons/icons8-закрыть-окно-50.png"></span>
+            <input class="event__name" name="eventName" type="text" required placeholder="Add title ">
+            
+            <div class="popup__timer">
+                <img class="clock" src="./src/icons/icons8-time-64.png">
+                <input class="event__start-date" name="eventstartDate" required type="date">
+                <select class="event__start-time select" size="1" name="eventStartTime" required></select>
+                <span class='line'></span>
+                <select class="event__end-time select" name="eventEndTime" required></select>
+                <input class="event__end-date" name="eventEndDate" required type="date">
+            </div>
+            <img class="multilineText" src="./src/icons/icons8-multiline-text-32.png">
+            <textarea class="event__description" name="eventDescription" cols="20" rows="10"
+                placeholder="Add description"></textarea>
+            <div class="popup__saveDelet-btn">
+                <span class="event__btn-delete"><img class="delete"
+                        src="./src/icons/icons8-trash-30.png"></span>
+                <button class="event__btn-save">Save</button>
+            </div>
+        </form>
+    </div>
+    <script src="./src/js/index.js" type="module"></script>
+</body>
+
+</html>
