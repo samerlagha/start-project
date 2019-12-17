@@ -28,6 +28,12 @@ header {
   justify-content: center;
 }
 
+.plus {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
 .today__button {
   height: 40px;
   background-color: transparent;
@@ -54,29 +60,24 @@ header {
   margin-right: 50px;
 }
 .navigation__arows_right {
-  background-image: url("../icons/icons8-forward-50.png");
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-position: center;
   background-size: auto;
 }
 .navigation__arows_right:hover {
   background-color: #D3D3D3;
-  transition: 1s;
 }
 .navigation__arows_left {
-  background-image: url("../icons/icons8-forward-50.png");
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  transform: rotate(180deg);
   background-position: center;
   background-size: auto;
 }
 .navigation__arows_left:hover {
   background-color: #D3D3D3;
-  transition: 1s;
 }
 
 .week {
@@ -89,6 +90,66 @@ header {
   display: flex;
   width: 100%;
   border-left: 1px solid #dddfe2;
+}
+
+.table {
+  display: flex;
+  padding-top: 163px;
+  width: 100%;
+  z-index: 1;
+}
+.table .times__blocks {
+  position: relative;
+  top: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 60px;
+  color: #70757a;
+}
+.table .lines__blocks {
+  margin: 0;
+  height: 60px;
+  width: 10px;
+  border-top: 1px solid #dddfe2;
+}
+.table .table-sections {
+  position: relative;
+  width: 100%;
+}
+.table .table-sections__section {
+  position: relative;
+  display: flex;
+  height: 60px;
+  width: 100%;
+  border-top: 1px solid #dddfe2;
+  border-left: 1px solid #dddfe2;
+}
+.table .table-sections__line {
+  display: flex;
+}
+
+.redline {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  width: 25vh;
+  z-index: 10;
+}
+.redline__ball {
+  position: relative;
+  bottom: 6px;
+  right: 6px;
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  background-color: #ea4335;
+}
+.redline__line {
+  position: relative;
+  bottom: 6px;
+  right: 6px;
+  width: 100%;
+  border-top: 2px solid #ea4335;
 }
 
 * {
