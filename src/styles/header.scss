@@ -17,16 +17,18 @@ header {
     width: 130px;
     height: 50px;
     background-color: transparent;
-    border: 1px solid #0000004f;
+    border: 1px solid #0d0d0d;
     border-top: none;
-    border-left: #0000004f;
-    border-right: #0000004f;
+    border-left: #0d0d0d;
+    border-right: #0d0d0d;
+
     border-radius: 40px;
     outline: none;
     margin-right: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+   
     
 }
 
@@ -53,12 +55,44 @@ header {
     margin-left: 20px;
 }
 
-.days {
+
+
+.navigation__arows{
+    display: flex;
+    margin-right: 50px;
+    &_right{
+        background-image: url("../icons/icons8-forward-50.png");
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: auto;
+        &:hover{
+            background-color: #D3D3D3;
+            transition: 1s;
+        }
+    }
+    &_left{
+        background-image: url("../icons/icons8-forward-50.png");
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        transform: rotate(180deg);
+        background-position: center;
+        background-size: auto;
+        &:hover{
+            background-color: #D3D3D3;
+            transition: 1s;
+        }
+    }
+}
+
+.week {
     display: flex;
     justify-content: space-between;
     padding-left: 70px;
     height: 15px;
-    &__block {
+    &__days{
         display: flex;
         width: 100%;
         border-left: 1px solid $table-color-border;
