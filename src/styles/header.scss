@@ -90,16 +90,5 @@ header {
            
         }
     }
-}
 
-.week {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 70px;
-    height: 15px;
-    &__days{
-        display: flex;
-        width: 100%;
-        border-left: 1px solid $table-color-border;
-    }
 }
