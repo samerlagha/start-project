@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="popup-layer display-none">
+        <form class="popup event" data-id-event="">
+            <span class="popup__btn-close"><img class="close"
+                    src="./src/icons/icons8-закрыть-окно-50.png"></span>
+            <input class="event__name" name="eventName" type="text" required placeholder="Add title ">
+
+            <div class="popup__picker">
+                <img class="clock" src="./src/icons/icons8-time-64.png">
+                <input class="event__date-start" name="eventDateStart" required type="date">
+                <select class="event__time-start select" size="1" name="eventTimeStart" required></select>
+                <span class='line'></span>
+                <select class="event__time-end select" name="eventTimeEnd" required></select>
+                <input class="event__date-end" name="eventDateEnd" required type="date">
+            </div>
+            <img class="multilineText" src="./src/icons/icons8-multiline-text-32.png">
+            <textarea class="event__description" name="eventDescription" cols="15" rows="5"
+                placeholder="Add description"></textarea>
+            <div class="footer-popup">
+                <span class="event__btn-delete"><img class="bascket"
+                        src="./src/icons/icons8-trash-30.png"></span>
+                <button class="event__btn-save">Save</button>
+            </div>
+        </form>
+
+    </div>
+      
+    </section>  
+</body>
+</html>

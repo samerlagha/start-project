@@ -28,6 +28,10 @@ header {
   justify-content: center;
 }
 
+.add_button:hover {
+  background-color: #0000000d;
+}
+
 .plus {
   width: 35px;
   height: 35px;
@@ -42,6 +46,11 @@ header {
   margin-right: 25px;
   border-radius: 5px;
   padding: 0 15px;
+  border: on;
+}
+
+.today__button:hover {
+  background-color: #0000000d;
 }
 
 .button-style {
@@ -81,16 +90,47 @@ header {
   background-color: #D3D3D3;
 }
 
-.week {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 70px;
-  height: 15px;
-}
 .week__days {
   display: flex;
   width: 100%;
-  border-left: 1px solid #dddfe2;
+  height: 100px;
+  padding-left: 5px;
+  background-color: white;
+  border-bottom: 1px solid #d5d5d5;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.day-name {
+  z-index: 2;
+  font-size: 9px;
+  color: grey;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  letter-spacing: 0.8px;
+}
+.day-name:hover {
+  color: blue;
+}
+
+.day-date {
+  z-index: 1;
+  font-size: 20px;
+  color: grey;
+  padding: 6px;
+}
+.day-date:hover {
+  background-color: blue;
+  color: white;
+  border-radius: 100%;
+}
+
+.day {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
 }
 
 .table {
@@ -99,13 +139,23 @@ header {
   width: 100%;
   z-index: 1;
 }
+.table .times {
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  background-color: white;
+  border-right: 1px solid #d5d5d5;
+}
 .table .times__blocks {
+  top: -6px;
   position: relative;
-  top: 50px;
-  margin-right: 10px;
-  margin-left: 10px;
-  height: 60px;
-  color: #70757a;
+  height: 50px;
+  padding-right: 8px;
+  text-align: right;
+  display: block;
+  font-size: 10px;
+  color: grey;
 }
 .table .lines__blocks {
   margin: 0;
@@ -151,6 +201,151 @@ header {
   right: 6px;
   width: 100%;
   border-top: 2px solid #ea4335;
+}
+
+.display-none {
+  display: none;
+}
+
+.popup-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #89898961;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 16px 16px 8px;
+  border-radius: 8px;
+  text-align: right;
+  background-color: #fff;
+}
+.popup__picker {
+  display: flex;
+  margin: 45px 0;
+  align-items: center;
+  position: relative;
+}
+.popup__color-picker {
+  margin: 45px 0 0 45px;
+  text-align: left;
+}
+.popup__color-picker_label-text {
+  margin-right: 15px;
+}
+.popup__btn-close {
+  position: absolute;
+  right: 10px;
+  top: -3px;
+}
+
+.event__name {
+  border: none;
+  border-bottom: 2px solid #d5d5d5;
+  width: 90%;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-style: italic;
+  outline: none;
+  margin-top: 30px;
+}
+.event__date-start, .event__date-end {
+  padding: 2px;
+  margin-left: 18px;
+  border: none;
+  background-size: contain;
+  outline: none;
+  width: 150px;
+}
+.event__time-start, .event__time-end {
+  border: none;
+  background-size: contain;
+  outline: none;
+  padding: 2px;
+  background-color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.event__description {
+  border: none;
+  width: 90%;
+  outline: none;
+  resize: none;
+}
+.event__btn-save {
+  position: absolute;
+  right: 5px;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: royalblue;
+  color: white;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-popup {
+  position: relative;
+  height: 40px;
+  display: flex;
+}
+
+.clock {
+  width: 25px;
+  height: 25px;
+}
+
+.line {
+  left: 237px;
+  width: 8px;
+  margin: 0 5px;
+  border-top: 2px solid black;
+}
+
+.multilineText {
+  position: absolute;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.close {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.bascket {
+  cursor: pointer;
+}
+
+.invalid {
+  border: 1px solid red;
+}
+
+.day-event {
+  position: absolute;
+  min-height: content;
+  width: 100%;
+  padding: 4px;
+  border-radius: 3px;
+  background-color: #4183f1;
+  font-size: 14px;
+  color: white;
+}
+.day-event__title {
+  height: 16px;
+  overflow: hidden;
 }
 
 * {

@@ -14,6 +14,8 @@ header {
 }
 
 .add__button {
+
+   
     width: 130px;
     height: 50px;
     background-color: transparent;
@@ -28,7 +30,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    
+}
+
+.add_button:hover {
+    background-color: #0000000d;
     
 }
 
@@ -46,8 +52,13 @@ header {
     margin-right: 25px;
     border-radius: 5px;
     padding: 0 15px;
+    
+   
 }
 
+.today__button:hover {
+    background-color: #0000000d;
+}
 .button-style {
     background-color: transparent;
     margin: 0 5px;
