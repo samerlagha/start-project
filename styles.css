@@ -132,52 +132,6 @@ header {
   flex-grow: 1;
 }
 
-.table {
-  display: flex;
-  padding-top: 163px;
-  width: 100%;
-  z-index: 1;
-}
-.table .times {
-  height: 100vw;
-  display: flex;
-  flex-direction: column;
-  width: 60px;
-  background-color: white;
-  border-right: 1px solid #d5d5d5;
-}
-.table .times__blocks {
-  display: block;
-  position: relative;
-  height: 50px;
-  text-align: right;
-  top: -6px;
-  padding-right: 8px;
-  font-size: 12px;
-  color: grey;
-}
-.table .lines__blocks {
-  margin: 0;
-  height: 60px;
-  width: 10px;
-  border-top: 1px solid #dddfe2;
-}
-.table .table-sections {
-  position: relative;
-  width: 100%;
-}
-.table .table-sections__section {
-  position: relative;
-  display: flex;
-  height: 60px;
-  width: 100%;
-  border-top: 1px solid #dddfe2;
-  border-left: 1px solid #dddfe2;
-}
-.table .table-sections__line {
-  display: flex;
-}
-
 .redline {
   display: flex;
   position: absolute;
@@ -347,16 +301,21 @@ header {
   overflow: hidden;
 }
 
+.content {
+  display: flex;
+}
+
 .sidebar {
   height: 100%;
   display: flex;
   flex-direction: column;
   width: 50px;
-  background-color: white;
+  background-color: #fff;
   font-size: 10px;
   border-right: 1px solid #d5d5d5;
   margin-top: 160px;
 }
+
 .sidebar__hour {
   top: -6px;
   position: relative;
@@ -364,55 +323,37 @@ header {
   padding-right: 8px;
   text-align: right;
 }
+
 .sidebar__hour-text {
   display: block;
   position: relative;
-  color: grey;
-}
-.sidebar__no-display {
-  visibility: hidden;
+  color: #70757a;
 }
 
-.content {
-  display: flex;
-  flex-wrap: wrap;
+.sidebar__no-display {
+  visibility: hidden;
 }
 
 .calendar {
   width: 100%;
   height: 100vh;
-  background-color: white;
+  background-color: #fff;
   margin-top: 160px;
 }
 
-.block {
+.calendar__week-bar {
   display: flex;
 }
 
-.sidebar {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  width: 50px;
-  background-color: white;
-  font-size: 10px;
-  border-right: 1px solid #d5d5d5;
-  margin-top: 160px;
+.calendar__day-bar {
+  width: 100%;
 }
-.sidebar__hour {
-  top: -6px;
-  position: relative;
-  min-height: 50px;
-  padding-right: 8px;
-  text-align: right;
-}
-.sidebar__hour-text {
-  display: block;
-  position: relative;
-  color: grey;
-}
-.sidebar__no-display {
-  visibility: hidden;
+
+.calendar__hour-bar {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
 }
 
 * {
