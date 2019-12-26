@@ -327,6 +327,7 @@ header {
 .sidebar__hour-text {
   display: block;
   position: relative;
+  flex-wrap: nowrap;
   color: #70757a;
 }
 
