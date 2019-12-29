@@ -1,7 +1,3 @@
-.content {
-    display: flex;
-   
-}
 .sidebar{
   height: 100%;
   display: flex;
@@ -33,24 +29,3 @@
   }
 }
 
-
-.calendar {
-    width: 100%;
-    height: 100vh;
-    background-color: #fff;
-    margin-top: 160px;
-  }
-  .calendar__week-bar {
-    display: flex;
-  }
-  .calendar__day-bar {
-    width: 100%;
-  }
-  .calendar__hour-bar {
-    width: 100%;
-    height: 50px;
-    border-bottom: 1px solid grey;
-    border-right: 1px solid grey;
-    // background-color:red;
-
-  }

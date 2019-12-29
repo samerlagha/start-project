@@ -1,5 +1,16 @@
-@import 'variables', 'header' ,'daynavigation','popup','event','main';
+@import 'variables', 'header' ,'daynavigation','popup','calendar','sidebar';
+
 * {
     box-sizing: border-box;
-    font-family: Roboto;
 }
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+// .seperator{
+//     height: 50px;
+//     background-color: red;
+//     width: 100%;
+// }
