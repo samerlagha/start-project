@@ -1,6 +1,6 @@
  export const renderSideabr = () =>{
 
-    for(let hour=0 ; hour < 24 ; hour++){
+    for(let i = 0 ; i < 24 ; i++){
         const sidebarHour = document.querySelector('div');
         sidebarHour.classList.add('.sidebar__hour');
 
